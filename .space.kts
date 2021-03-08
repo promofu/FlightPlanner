@@ -4,6 +4,6 @@
 * For more info, see https://www.jetbrains.com/help/space/automation.html
 */
 
-job("Hello World!") {
-    container("hello-world")
+job("Build and run tests") {
+   gradlew("openjdk:11", "build")
 }
